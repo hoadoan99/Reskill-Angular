@@ -1,0 +1,24 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.btn-group {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.btn-group img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.profile-group {
+  display: flex;
+  align-items: center;
+}
+
+h3 {
+  font-size: 14px;
+}

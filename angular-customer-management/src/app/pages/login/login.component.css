@@ -1,0 +1,29 @@
+mat-card {
+  width: 50%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.btn-login {
+  color: #fff;
+  width: 100px;
+  padding: 10px;
+  background-color: #3f51b5;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  background-color: #2d42b9;
+}
+
+input {
+  font-size: 13px;
+  outline: none;
+  margin-top: 10px;
+}
+
+mat-form-field {
+  margin-right: 10px;
+}

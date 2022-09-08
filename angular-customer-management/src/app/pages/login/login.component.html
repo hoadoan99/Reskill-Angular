@@ -1,0 +1,23 @@
+<mat-card>
+  <mat-card-title>Login With Admin Panel</mat-card-title>
+  <!-- form  -->
+  <div class="example-container">
+    <!-- email  -->
+    <mat-form-field appearance="fill">
+      <label>Email</label><!-- alert validate -->
+      <div style="color:red; font-size: 12px;" *ngIf="emailInput.invalid && emailInput.touched"> Invalid Email </div>
+      <input matInput placeholder="pat@example.com" type="email" [(ngModel)]="email" required email
+        #emailInput="ngModel" />
+    </mat-form-field>
+
+    <!-- password  -->
+    <mat-form-field appearance="fill">
+      <label>Password</label>
+      <div style="color:red; font-size: 12px;" *ngIf="passwordInput.invalid && passwordInput.touched"> Invalid Password
+      </div>
+      <input matInput type="password" [(ngModel)]="password" required password #passwordInput="ngModel" />
+    </mat-form-field>
+  </div>
+  <!-- button  -->
+  <button type="submit" class="btn-login" (click)="login(emailInput)">Login</button>
+</mat-card>
